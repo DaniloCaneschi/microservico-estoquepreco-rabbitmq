@@ -8,4 +8,4 @@ O produtor será em java com spring, 1 consumidor em java com spring e o outro e
 
 ![Projeto](https://user-images.githubusercontent.com/51996690/120472712-9cdca900-c37c-11eb-967d-a4749f764c4e.png)
 
-Até o momento foi realizado a instalação do RabbitMQ com Docker e implementado a criação das filas no RabbitMQ.
+Até o momento foi implementado o envio de mensagens para o RabbitMQ. As mensagens são classes(objetos) serializados.
