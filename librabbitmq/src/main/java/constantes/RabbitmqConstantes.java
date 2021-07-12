@@ -1,4 +1,4 @@
-package com.microservico.estoquepreco.constantes;
+package constantes;
 
 /**
  *

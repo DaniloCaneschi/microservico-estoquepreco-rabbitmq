@@ -5,14 +5,14 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.5.0</version>
-    <relativePath/> <!-- lookup parent from repository -->
+    <version>2.5.2</version>
+    <relativePath/>
   </parent>
-  <groupId>com.microservico</groupId>
-  <artifactId>estoquepreco</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>estoquepreco</name>
-  <description>API Rest Estoque Preço com RabbitMQ</description>
+  <groupId>com.microsservico</groupId>
+  <artifactId>consumidor-estoque</artifactId>
+  <version>1.0.0</version>
+  <name>consumidor-estoque</name>
+  <description>Demo project for Spring Boot</description>
   <properties>
     <java.version>11</java.version>
   </properties>
@@ -24,13 +24,15 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
+      <artifactId>spring-boot-starter-amqp</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.springframework.amqp</groupId>
-      <artifactId>spring-rabbit</artifactId>
+      <groupId>org.librabbitmq</groupId>
+      <artifactId>librabbitmq</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
+
   </dependencies>
 
   <build>
