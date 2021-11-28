@@ -11,11 +11,13 @@ import org.springframework.stereotype.Component;
 public class EstoqueConsumer {
 
   @RabbitListener(queues = RabbitmqConstantes.FILA_ESTOQUE)
-  private void consumidor(String mensagem) throws JsonProcessingException {
+  private void consumidor(String mensagem) throws JsonProcessingException, InterruptedException {
     EstoqueDto estoqueDto = new ObjectMapper().readValue(mensagem, EstoqueDto.class);
 
     System.out.println(estoqueDto.codigoproduto);
     System.out.println(estoqueDto.quantidade);
     System.out.println("------------------------------------");
+
+    Thread.sleep(30000);
   }
 }
