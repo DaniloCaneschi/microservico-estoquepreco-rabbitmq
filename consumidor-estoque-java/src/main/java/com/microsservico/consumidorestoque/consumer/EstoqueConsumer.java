@@ -18,6 +18,6 @@ public class EstoqueConsumer {
     System.out.println(estoqueDto.quantidade);
     System.out.println("------------------------------------");
 
-    Thread.sleep(30000);
+    throw new IllegalArgumentException("Argumento inválido!");
   }
 }
